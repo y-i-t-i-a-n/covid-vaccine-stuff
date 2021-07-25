@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html id="html-tag">
+  <head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css" media="screen"><!-- STYLESHEET -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous"><!-- BOTTOM FONT -->
+    <link rel="icon" href="/images/favicon.png"><!-- FAVICON -->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script><!-- JQUERY -->
+    <script async defer src="https://kit.fontawesome.com/be1c464a8f.js"></script><!-- FA ICONS -->
+    <script defer src="script.js"></script><!-- SCRIPT -->
+  </head>
+  <body>
+    <div id="loading">
+      <img id="loading-animation" src="images/loadingAnimation.gif">
+    </div>
+    <div id="main">
+      <div id="top">
+        <div id="top-text">资料</div>
+      </div>
+      <div id="content">
+        好吧，我找了一堆资料去。。。爱看就看看不爱看我就白找了半天呗 🤷‍♂️😶
+        <div id="contra">
+          <h3 id="contra-label">反对</h3>
+          <div class="qna-main">
+            <div class="qna-q">“反正不会生病，要是生病的话也就是一个感冒不会很严重”</div>
+            <div class="qna-a">
+              就算死或者去医院的几率比较低，还是有这个可能性，而且就算不用去医院也可以生病很严重<br>
+              1. Long-Covid: 按照英国 Office of National Statistics 的 <a target="_blank" href="https://www.nature.com/articles/d41586-021-01935-7">数据 <i class="fa fa-share-square"></i></a> 接触病毒之后五个星期有10-15%还有留下的症状；虽然这些人有可能也是因为别的原因有这些症状然后这个几率可能更低，还是有这个可能性<br>
+              2. PIMS/MIS-C: 还有更稀奇的 <a target="_blank" href="https://www.deutsche-apotheker-zeitung.de/news/artikel/2021/05/31/studie-zeigt-pims-ist-gefaehrlich-aber-wohl-gut-heilbar">PIMS/MIS-C Syndrome <i class="fa fa-share-square"></i></a> ；这个的几率虽然挺低的，可是它比简单的Long-Covid更严重
+            </div>
+            <div class="qna-c" onclick="CSSEffects.qnaUpDown(this)">
+              <span class="fa fa-caret-up"></span>
+            </div>
+          </div>
+          <div class="qna-main">
+            <div class="qna-q">“现在没有足够的数据，还得等等可能会有现在还没发现的副作用”</div>
+            <div class="qna-a">
+              1. 从五月初 FDA 和 CDC 同意到现在，美国已经有800万个12-17岁的小孩得到这个疫苗了；所有的副作用要不然很稀奇，要不然不严重然后过两天就好了<br>
+              2. 数据是从天上掉下来的？得有人去打这个疫苗才能有数据，大家都像你这样的话等到猴年马月也没有更多的数据；有很多人去打才能发现稀奇的副作用；这种想法 “当然得有小孩去打，让我们发现稀奇的副作用。。。可是千万别让我的小孩去打” 很自私
+            </div>
+            <div class="qna-c" onclick="CSSEffects.qnaUpDown(this)">
+              <span class="fa fa-caret-up"></span>
+            </div>
+          </div>
+          <div class="qna-main">
+            <div class="qna-q">“要是老师，家长，etc 都去打疫苗的话，小孩也不会传染到”</div>
+            <div class="qna-a">。。。你去了吗？</div>
+            <div class="qna-c" onclick="CSSEffects.qnaUpDown(this)">
+              <span class="fa fa-caret-up"></span>
+            </div>
+          </div>
+        </div>
+        <div id="pro">
+          <h3 id="pro-label">支持</h3>
+          <div class="qna-main">
+            <div class="qna-q">疫苗 > 感染</div>
+            <div class="qna-a">
+              <div class="text-justify">
+                "Dieses Virus wird endemisch werden, das wird nicht weggehen. Und wer sich jetzt beispielsweise aktiv dagegen entscheidet, sich impfen zu lassen, der wird sich unweigerlich infizieren."
+                ~ Prof. Dr. Christian Drosten <a target="_blank" href="https://www.ndr.de/nachrichten/info/88-Impfmission-possible,audio887680.html"><i class="fa fa-share-square"></i></a>
+              </div>
+              <ul>
+                <li>1400 Hospitalizations / 400000 Cases = 0.35% （德国）</li>
+                <li>
+                  1 Myocarditis Case / 16000 Vaccinations = 0.00625% (男生；女生只有1/115000的几率）
+                  <ul><li>而且很多都是过两天自己好的，不用去医院</li></ul>
+                </li>
+              </ul>
+            </div>
+            <div class="qna-c" onclick="CSSEffects.qnaUpDown(this)">
+              <span class="fa fa-caret-up"></span>
+            </div>
+          </div>
+          <div class="qna-main">
+            <div class="qna-q">要是暑假之后学校里很多人没打的话，要是有一个人得就会很快地传给大家</div>
+            <div class="qna-a">之前某个班已经得去隔离了，鬼知道会不会在有；去年也就是 <a target="_blank" href="https://www.faz.net/aktuell/politik/inland/corona-berliner-forscher-erwarten-vierte-welle-im-oktober-17442248.html">大概九月十月开始长的 <i class="fa fa-share-square"></i></a></div>
+            <div class="qna-c" onclick="CSSEffects.qnaUpDown(this)">
+              <span class="fa fa-caret-up"></span>
+            </div>
+          </div>
+        </div>
+        <div id="conclusion">
+          <h2 id="conclusion-label">结论</h2>
+          <ol>
+            <li>得 Corona 去医院/有长期的后果的几率比得到打疫苗有可能得的严重副作用的几率高很多</li>
+            <li>所有的数据都 indicate 这个疫苗是 effective 的</li>
+            <li>最晚到秋天 Cases 会 inevitably 再长，现在都已经在长了；这个玩意不会消失，不去打疫苗的话早晚就会从某个人身上传染到那个病毒</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div id="bottom">
+      <div id="bottom-content">
+        <a class="bottom-element" id="qna">Q&nbsp;n&nbsp;A</a><a
+          class="bottom-element" id="material">MATERIAL</a><a
+          class="bottom-element" id="stats">STATISTICS
+        </a>
+      </div>
+    </div>
+    <div class="pane" id="material-pane">
+      <div class="inner-pane" id="material-inner-pane">
+        <h3>更多资料于视频</h3>
+        <div class="material-container">
+          <div class="material-description">
+            Some stuff probably worth reading..<br><br>
+            <a target="_blank" href="https://www.zdf.de/nachrichten/panorama/corona-usa-impfung-kinder-100.html">ZDFheute: Wie das Impfen von Kindern in den USA läuft <i class="fa fa-share-square"></i></a><br>
+            <a target="_blank" href="https://www.healthline.com/health-news/what-happens-when-parents-disagree-over-childrens-covid-19-vaccinations"><br>Healthline: What Happens When Parents Disagree Over Children’s COVID-19 Vaccinations? <i class="fa fa-share-square"></i></a>
+            <ul>
+              <li>你就是第一个女的的老公，可是人家是两个家长在吵，我是自己跟你吵</li>
+              <li><i>“I have reams of data I share with him (about vaccines), and he just says it’s all 'liberal propaganda',” said Susanna</i><br><i class="fa fa-long-arrow-alt-right"></i> 你的 “都是假的”</li>
+            </ul>
+            <a target="_blank" href="https://www.news4teachers.de/2021/07/der-staat-zwingt-schueler-in-ein-durchseuchungs-programm-mit-uns-nicht/">Der Staat zwingt Schüler in ein Durchseuchungs-Programm. Mit uns nicht! <i class="fa fa-share-square"></i></a><br><br>
+            <a target="_blank" href="https://www.br.de/nachrichten/bayern/corona-impfung-ab-12-jahren-muessen-eltern-eigentlich-zustimmen,Sdhai6A">BR24: Corona-Impfung ab 12 Jahren: Müssen Eltern eigentlich zustimmen? <i class="fa fa-share-square"></i></a><br>
+            <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/adverse-events.html">CDC: Rare Adverse Events <i class="fa fa-share-square"></i></a>
+          </div>
+        </div>
+        <div class="material-container">
+          <iframe src="https://www.youtube.com/embed/Rw7-fvMjFSU" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="material-container">
+          <iframe src="https://www.youtube.com/embed/GzDgEKUerIo" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="material-container">
+          <iframe src="https://www.youtube.com/embed/nhXdnQyS75s?start=290&end=339" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="material-container">
+          <iframe src="https://www.youtube.com/embed/Z7HHPNT1X78" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="material-container">
+          <iframe src="https://www.youtube.com/embed/pbU8X8yFzkU" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="material-container">
+          <iframe src="https://www.youtube.com/embed/yd5tV-SoCeo?start=405" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="material-container">
+          <iframe src="https://www.youtube.com/embed/Yh2v8ZQXb1s" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="pane" id="stats-pane">
+      <div class="inner-pane" id="stats-inner-pane">
+        <h3>STATISTICS</h3>
+        <div class="material-container">
+          <div class="material-description">
+             Efficacy: 比如说英国的数据<br>
+             <img src="images/ukCases.png">
+             <img src="images/ukDeaths.png">
+             1) 英国的 Cases<br>
+             2) 英国的死亡数据
+             <ul>
+               <li>第一轮的死亡率很高，第二和第三轮的死亡率也很高</li>
+               <li>第三轮之后人家开始打疫苗，到六月的时候虽然 Cases 又在长可是死亡率没有长很多；要是没有疫苗的话死亡的数可能会是我画的红线那样</li>
+             </ul>
+             <a target="_blank" href="https://www.worldometers.info/coronavirus/country/uk/" style="color: #fff">来源：Worldometers <i class="fa fa-share-square"></i></a>
+          </div>
+        </div>
+        <div class="material-container">
+          <div class="material-description">
+            <img src="images/myocarditis.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
